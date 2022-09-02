@@ -1,0 +1,109 @@
+/*--- Color Palete*/
+
+:root {
+  /* black */
+  --hunter_green: #1A4D2E;
+  --wheat_gold: #FF9F29;
+  /* white */
+
+}
+
+
+/*--- TITLE SECTION -----------------*/
+
+.title-heading {
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 3% 0 1%;
+}
+
+#index-title {
+}
+
+.intro-text {
+  padding: 3% 0 3% 1%;
+}
+
+/*--- Nav Bar -----------------*/
+.nav-bar {
+  margin-bottom: 15px;
+}
+
+.nav-link:hover {
+  color: var(--wheat_gold);
+}
+
+.coffeeshop-image {
+  border-radius: 50%;
+  border: 3px solid black;
+  position: relative;
+  float: right;
+  bottom: 100px;
+  width: 50%;
+}
+
+/*--- About Page -------------------------------*/
+.about-image-one {
+  border-radius: 50%;
+  border: 3px solid black;
+  position: absolute;
+  left: 63%;
+  top: 10%;
+  width: 35%;
+}
+
+.about-image-two {
+  border-radius: 50%;
+  border: 3px solid black;
+  position: absolute;
+  top: 73%;
+  width: 30%;
+}
+
+
+/*--- Footer ------------------------------------*/
+#footer {
+  text-align: center;
+}
+
+.footer-icon {
+  color: white;
+  padding: 5% 1% 2% 1%;
+}
+
+.footer-icon:hover {
+  color: var(--wheat_gold);
+}
+
+.copyright {
+  padding-bottom: 5%
+}
+
+/* ---------- Containers ----------------------*/
+
+
+
+
+/*--- Sections -----------------*/
+.black-section {
+  background-color: black;
+  color: white;
+}
+
+.white-section {
+  padding-bottom: 3%;
+}
+/*--- Mobile Responsiveness -----------------*/
+@media (max-width: 996px) {
+  .coffeeshop-image {
+    width: 30%;
+  }
+}
+
+
+body {
+  font-family: 'Big Shoulders Display';
+}
+
+h1, h2, , h3, h4 ,h5, p {
+}

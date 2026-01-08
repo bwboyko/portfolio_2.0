@@ -44,8 +44,86 @@ p {
   padding-bottom: 2rem;
 }
 
+/* Consistent header height across all pages */
+.black-section {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+
 .intro-text {
   padding: 3% 0 3% 1%;
+}
+
+/*--- Tech Stack Scrolling Bar -----------------*/
+.tech-stack-section {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  overflow: hidden;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tech-stack-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.tech-stack-wrapper:hover {
+  animation-play-state: paused;
+}
+
+.tech-item {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  margin: 0 1rem;
+  background-color: white;
+  border: 2px solid var(--hunter_green);
+  border-radius: 25px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background-color: var(--hunter_green);
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*--- Resume Button -----------------*/
+.resume-btn {
+  background-color: var(--wheat_gold);
+  color: var(--black);
+  border: 2px solid var(--wheat_gold);
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background-color: var(--black);
+  color: var(--wheat_gold);
+  border-color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /*--- Nav Bar -----------------*/
@@ -198,6 +276,21 @@ a:hover {
   .footer-icon {
     font-size: 1.5rem;
     margin: 0 0.5rem;
+  }
+  
+  .black-section {
+    min-height: 200px;
+  }
+  
+  .tech-item {
+    padding: 0.4rem 1.5rem;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .resume-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
   }
 }
 

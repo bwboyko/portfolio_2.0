@@ -109,6 +109,30 @@ p {
   margin-bottom: 0;
 }
 
+/* Flash animation for contact icons */
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+.flash {
+  animation: flash 1.5s ease-in-out;
+}
+
 /*--- Sections -----------------*/
 .black-section {
   background-color: black;
@@ -215,5 +239,139 @@ a:hover {
   .coffeeshop-image,
   .about-image {
     max-width: 60%;
+  }
+}
+
+/*--- Portfolio Page Styles -----------------*/
+.project-card {
+  padding: 2rem 0;
+}
+
+.project-tech {
+  color: var(--hunter_green);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  line-height: 2;
+  margin: 1.5rem 0;
+}
+
+.feature-list li {
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  margin-top: 2rem;
+}
+
+.project-links .btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.project-links .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-dark {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-dark:hover {
+  background-color: var(--hunter_green);
+  border-color: var(--hunter_green);
+}
+
+.btn-outline-dark {
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+.project-image-container {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid var(--black);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.coming-soon-placeholder {
+  background-color: #f0f0f0;
+  border: 3px dashed var(--hunter_green);
+  border-radius: 10px;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.coming-soon-placeholder i {
+  font-size: 4rem;
+  color: var(--hunter_green);
+  margin-bottom: 1rem;
+}
+
+.coming-soon-placeholder p {
+  font-size: 1.5rem;
+  color: var(--hunter_green);
+  font-weight: bold;
+}
+
+.project-divider {
+  margin: 3rem 0;
+  border-top: 2px solid #e0e0e0;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Portfolio page mobile responsiveness */
+@media (max-width: 991.98px) {
+  .project-card {
+    text-align: center;
+  }
+  
+  .feature-list {
+    text-align: left;
+    display: inline-block;
+  }
+  
+  .project-links {
+    text-align: center;
+  }
+  
+  .coming-soon-placeholder {
+    padding: 3rem 1rem;
+  }
+  
+  .coming-soon-placeholder i {
+    font-size: 3rem;
   }
 }

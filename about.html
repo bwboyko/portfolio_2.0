@@ -95,11 +95,34 @@
   <!-- Footer ----------------------------------------->
   <footer class="black-section" id="footer">
     <div class="container-fluid">
-      <a href="mailto:bwboyko@maxxpotential.com"><i class="footer-icon fa-regular fa-envelope"></i></a>
-      <a href="https://www.instagram.com/my_name_is_boyko/"><i class="footer-icon fa-brands fa-instagram"></i></a>
+      <a href="mailto:bwboyko@maxxpotential.com" class="contact-icon"><i class="footer-icon fa-regular fa-envelope"></i></a>
+      <a href="https://www.instagram.com/my_name_is_boyko/" class="contact-icon"><i class="footer-icon fa-brands fa-instagram"></i></a>
       <p class="copyright">© Copyright Nadnerb Inc</p>
     </div>
   </footer>
+
+  <script>
+    // Add flash effect when contact link is clicked
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactLinks = document.querySelectorAll('a[href="#footer"]');
+      const icons = document.querySelectorAll('.footer-icon');
+      
+      contactLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          // Small delay to let the scroll happen first
+          setTimeout(() => {
+            icons.forEach(icon => {
+              icon.classList.add('flash');
+              // Remove the class after animation completes
+              setTimeout(() => {
+                icon.classList.remove('flash');
+              }, 1500);
+            });
+          }, 300);
+        });
+      });
+    });
+  </script>
 
 </body>
 

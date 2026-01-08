@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Brendan Boyko</title>
 
   <!--- Google fonts--->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,24 +15,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-
   <!--- Site Specific CSS--->
   <link rel="stylesheet" href="css/styles.css">
   <!--- Icons --->
   <script src="https://kit.fontawesome.com/1703913188.js" crossorigin="anonymous"></script>
-
-
+  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
 
-  <section class="black-section" id="">
+  <section class="black-section" id="about-header">
     <div class="container-fluid">
 
       <!--- Navbar --->
-
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand ps-1" href=""></a>
+        <a class="navbar-brand ps-1" href="index.html">Brendan Boyko</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,7 +39,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio\portfolio.html">Portfolio</a>
+              <a class="nav-link" href="portfolio/portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#footer">Contact</a>
@@ -51,21 +49,20 @@
       </nav>
 
       <!--- Header --->
-      
       <div class="row">
-        <div class="col-lg-12 intro-text">
+        <div class="col-12 intro-text">
           <h1>About me</h1>
         </div>
       </div>
+
+    </div>
   </section>
 
-
-<!-- Section One ----------------------------------------->
-
+  <!-- Section One - History ----------------------------------------->
   <section class="white-section">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 intro-text">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 col-md-12 intro-text order-1">
           <h3>My History</h3>
           <p>Throughout my 20s I was a career chef and hospitality manager</p>
           <p>Working at Alligator Soul in Savannah, Georgia</p>
@@ -74,33 +71,36 @@
           <p>Brine was a pop-up kitchen serving traditional Ukrainian-Canadian cuisine</p>
           <p>As well as char-grilled oysters, because it was NOLA after all...</p>
         </div>
-        <div class="col-4-lg">
-          <img class="about-image-one" src="images\oysters.jpg">
-        </div>
-
-        <div class="col-6-lg">
-          <img class="about-image-two" src="images\BrenGuitar.jpg">
-          <div style="float: right; text-align: right;" class="intro-text">
-            <h3>Music</h3>
-            <p>I play guitar for The Kyles</p>
-            <p>Check out our Instagram: https://www.instagram.com/thekylesrva/</p>
-            <p>Or listen to us on our bandcamp: https://thekylesrva.bandcamp.com/</p>
-            <p>Support your local artists!</p>
-          </div>
+        <div class="col-lg-6 col-md-12 text-center order-2">
+          <img class="about-image" src="images/oysters.jpg" alt="Oysters from Brine LLC">
         </div>
       </div>
+
+      <!-- Section Two - Music ----------------------------------------->
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 text-center order-2 order-lg-1">
+          <img class="about-image" src="images/BrenGuitar.jpg" alt="Brendan playing guitar">
+        </div>
+        <div class="col-lg-6 col-md-12 intro-text text-lg-end order-1 order-lg-2">
+          <h3>Music</h3>
+          <p>I play guitar for The Kyles</p>
+          <p>Check out our <a href="https://www.instagram.com/thekylesrva/" target="_blank">Instagram</a></p>
+          <p>Or listen to us on our <a href="https://thekylesrva.bandcamp.com/" target="_blank">Bandcamp</a></p>
+          <p>Support your local artists!</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- Footer ----------------------------------------->
-
+  <!-- Footer ----------------------------------------->
   <footer class="black-section" id="footer">
     <div class="container-fluid">
       <a href="mailto:bwboyko@maxxpotential.com"><i class="footer-icon fa-regular fa-envelope"></i></a>
       <a href="https://www.instagram.com/my_name_is_boyko/"><i class="footer-icon fa-brands fa-instagram"></i></a>
-      <p class="copyright">@Copyright Nadnerb Inc</p>
+      <p class="copyright">© Copyright Nadnerb Inc</p>
     </div>
   </footer>
+
 </body>
 
 </html>
-
